@@ -1,12 +1,12 @@
 package io.annot8.examples.processors;
 
+import io.annot8.api.components.responses.ProcessorResponse;
+import io.annot8.api.data.Item;
+import io.annot8.api.exceptions.BadConfigurationException;
 import io.annot8.common.components.AbstractProcessor;
 import io.annot8.common.data.bounds.SpanBounds;
 import io.annot8.common.data.content.Text;
 import io.annot8.conventions.PropertyKeys;
-import io.annot8.core.components.responses.ProcessorResponse;
-import io.annot8.core.data.Item;
-import io.annot8.core.exceptions.BadConfigurationException;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;

@@ -6,5 +6,5 @@ module annot8.templates.processor {
   requires java.json.bind;
 
   //Declare which packages we're exposing to other modules
-  exports io.annot8.templates.source;
+  exports io.annot8.templates.processor;
 }

@@ -1,6 +1,6 @@
 package io.annot8.templates.source;
 
-import io.annot8.core.settings.Settings;
+import io.annot8.api.settings.Settings;
 
 import javax.json.bind.annotation.JsonbCreator;
 

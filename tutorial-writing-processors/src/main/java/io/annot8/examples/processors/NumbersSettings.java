@@ -1,7 +1,7 @@
 package io.annot8.examples.processors;
 
-import io.annot8.core.settings.Description;
-import io.annot8.core.settings.Settings;
+import io.annot8.api.settings.Description;
+import io.annot8.api.settings.Settings;
 
 import javax.json.bind.annotation.JsonbCreator;
 import javax.json.bind.annotation.JsonbProperty;

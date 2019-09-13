@@ -2,11 +2,11 @@ package io.annot8.templates.source;
 
 import io.annot8.common.components.AbstractSourceDescriptor;
 import io.annot8.common.components.capabilities.SimpleCapabilities;
-import io.annot8.core.capabilities.Capabilities;
-import io.annot8.core.components.annotations.ComponentDescription;
-import io.annot8.core.components.annotations.ComponentName;
-import io.annot8.core.components.annotations.SettingsClass;
-import io.annot8.core.context.Context;
+import io.annot8.api.capabilities.Capabilities;
+import io.annot8.api.components.annotations.ComponentDescription;
+import io.annot8.api.components.annotations.ComponentName;
+import io.annot8.api.components.annotations.SettingsClass;
+import io.annot8.api.context.Context;
 
 @ComponentName("Component name")   //TODO: Update this
 @ComponentDescription("Component description")   //TODO: Update this

@@ -1,8 +1,8 @@
 package io.annot8.examples.processors;
 
+import io.annot8.api.annotations.Annotation;
+import io.annot8.api.exceptions.BadConfigurationException;
 import io.annot8.common.data.content.Text;
-import io.annot8.core.annotations.Annotation;
-import io.annot8.core.exceptions.BadConfigurationException;
 import io.annot8.testing.testimpl.TestItem;
 import io.annot8.testing.testimpl.content.TestStringContent;
 import org.junit.jupiter.api.Test;

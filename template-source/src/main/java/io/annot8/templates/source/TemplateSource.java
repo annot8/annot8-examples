@@ -1,8 +1,8 @@
 package io.annot8.templates.source;
 
 import io.annot8.common.components.AbstractSource;
-import io.annot8.core.components.responses.SourceResponse;
-import io.annot8.core.data.ItemFactory;
+import io.annot8.api.components.responses.SourceResponse;
+import io.annot8.api.data.ItemFactory;
 
 public class TemplateSource extends AbstractSource {
 

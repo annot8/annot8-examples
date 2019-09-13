@@ -1,13 +1,14 @@
 package io.annot8.examples.processors;
 
+import io.annot8.api.capabilities.AnnotationCapability;
+import io.annot8.api.capabilities.Capabilities;
+import io.annot8.api.capabilities.ContentCapability;
 import io.annot8.common.data.bounds.SpanBounds;
 import io.annot8.common.data.content.Text;
-import io.annot8.core.capabilities.AnnotationCapability;
-import io.annot8.core.capabilities.Capabilities;
-import io.annot8.core.capabilities.ContentCapability;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 public class NumbersTest {
 
