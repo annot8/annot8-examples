@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>io.annot8.examples</groupId>
+  <artifactId>tutorial-writing-processors</artifactId>
+  <version>0.4.0-SNAPSHOT</version>
+
+  <name>Tutorial: Writing Processors</name>
+
+  <properties>
+    <!-- Annot8 requires Java 11 or later -->
+    <maven.compiler.source>11</maven.compiler.source>
+    <maven.compiler.target>11</maven.compiler.target>
+
+    <!-- Set the Annot8 version as a property so all libraries use the same -->
+    <annot8.version>0.4.0-SNAPSHOT</annot8.version>
+  </properties>
+
+  <dependencies>
+    <!-- Common classes for building components -->
+    <dependency>
+      <groupId>io.annot8</groupId>
+      <artifactId>annot8-common-components</artifactId>
+      <version>${annot8.version}</version>
+    </dependency>
+    <!-- Common classes for data (Content) and bounds -->
+    <dependency>
+      <groupId>io.annot8</groupId>
+      <artifactId>annot8-common-data</artifactId>
+      <version>${annot8.version}</version>
+    </dependency>
+    <!-- Conventions for property and type names -->
+    <dependency>
+      <groupId>io.annot8</groupId>
+      <artifactId>annot8-conventions</artifactId>
+      <version>${annot8.version}</version>
+    </dependency>
+
+    <!-- Testing dependencies, including test implementation of Annot8 API classes -->
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter-api</artifactId>
+      <version>5.5.2</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>io.annot8</groupId>
+      <artifactId>annot8-test-impl</artifactId>
+      <version>${annot8.version}</version>
+    </dependency>
+  </dependencies>
+
+</project>
