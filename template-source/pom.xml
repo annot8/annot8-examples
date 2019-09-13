@@ -48,7 +48,17 @@
       <groupId>io.annot8</groupId>
       <artifactId>annot8-test-impl</artifactId>
       <version>${annot8.version}</version>
+      <scope>test</scope>
     </dependency>
   </dependencies>
 
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.8.0</version>
+      </plugin>
+    </plugins>
+  </build>
 </project>
