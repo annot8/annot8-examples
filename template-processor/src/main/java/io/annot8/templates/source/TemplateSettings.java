@@ -1,4 +1,4 @@
-package io.annot8.templates.processor;
+package io.annot8.templates.source;
 
 import io.annot8.core.settings.Settings;
 

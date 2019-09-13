@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>io.annot8.examples</groupId>
+  <artifactId>template-source</artifactId>
+  <version>0.4.0-SNAPSHOT</version>
+
+  <!-- TODO: Set a name and description for your package -->
+  <name>Template: Source</name>
+  <description>Template for creating new sources</description>
+
+  <properties>
+    <maven.compiler.source>11</maven.compiler.source>
+    <maven.compiler.target>11</maven.compiler.target>
+
+    <annot8.version>0.4.0-SNAPSHOT</annot8.version>
+  </properties>
+
+  <dependencies>
+    <!-- TODO: These are likely Annot8 dependencies, but you may need to customise these -->
+    <dependency>
+      <groupId>io.annot8</groupId>
+      <artifactId>annot8-common-components</artifactId>
+      <version>${annot8.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>io.annot8</groupId>
+      <artifactId>annot8-common-data</artifactId>
+      <version>${annot8.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>io.annot8</groupId>
+      <artifactId>annot8-conventions</artifactId>
+      <version>${annot8.version}</version>
+    </dependency>
+
+    <!-- Testing dependencies -->
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter-api</artifactId>
+      <version>5.5.2</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>io.annot8</groupId>
+      <artifactId>annot8-test-impl</artifactId>
+      <version>${annot8.version}</version>
+    </dependency>
+  </dependencies>
+
+</project>

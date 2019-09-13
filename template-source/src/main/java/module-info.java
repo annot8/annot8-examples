@@ -1,4 +1,4 @@
-module annot8.templates.processor {
+module annot8.templates.source {
   //Declare which modules we're using
   requires io.annot8.common.components;
   requires io.annot8.common.data;

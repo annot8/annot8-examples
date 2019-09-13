@@ -1,4 +1,4 @@
-package io.annot8.templates.processor;
+package io.annot8.templates.source;
 
 import io.annot8.common.components.AbstractProcessor;
 import io.annot8.core.components.responses.ProcessorResponse;
