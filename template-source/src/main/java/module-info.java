@@ -3,7 +3,7 @@ module annot8.templates.source {
   requires io.annot8.common.components;
   requires io.annot8.common.data;
   requires io.annot8.conventions;
-  requires java.json.bind;
+  requires jakarta.json.bind;
 
   //Declare which packages we're exposing to other modules
   exports io.annot8.templates.source;

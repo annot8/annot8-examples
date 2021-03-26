@@ -1,8 +1,7 @@
 package io.annot8.templates.source;
 
 import io.annot8.api.settings.Settings;
-
-import javax.json.bind.annotation.JsonbCreator;
+import jakarta.json.bind.annotation.JsonbCreator;
 
 public class TemplateSettings implements Settings {
 

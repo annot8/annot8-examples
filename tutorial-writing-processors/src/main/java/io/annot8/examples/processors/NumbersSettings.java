@@ -2,9 +2,8 @@ package io.annot8.examples.processors;
 
 import io.annot8.api.settings.Description;
 import io.annot8.api.settings.Settings;
-
-import javax.json.bind.annotation.JsonbCreator;
-import javax.json.bind.annotation.JsonbProperty;
+import jakarta.json.bind.annotation.JsonbCreator;
+import jakarta.json.bind.annotation.JsonbProperty;
 
 /*
   Settings class for our processor, which is used to hold and validate configuration information.
