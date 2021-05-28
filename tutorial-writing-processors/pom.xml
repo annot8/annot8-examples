@@ -16,7 +16,7 @@
     <maven.compiler.target>11</maven.compiler.target>
 
     <!-- Set the Annot8 version as a property so all libraries use the same -->
-    <annot8.version>0.4.0-SNAPSHOT</annot8.version>
+    <annot8.version>1.0.0</annot8.version>
   </properties>
 
   <dependencies>
