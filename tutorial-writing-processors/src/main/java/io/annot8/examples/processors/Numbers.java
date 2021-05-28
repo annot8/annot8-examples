@@ -9,6 +9,7 @@ import io.annot8.common.components.AbstractProcessorDescriptor;
 import io.annot8.common.components.capabilities.SimpleCapabilities;
 import io.annot8.common.data.bounds.SpanBounds;
 import io.annot8.common.data.content.Text;
+import io.annot8.conventions.AnnotationTypes;
 
 /*
   The class annotations below are intended for use by user interfaces to show meaningful information
@@ -19,7 +20,7 @@ import io.annot8.common.data.content.Text;
 @SettingsClass(NumbersSettings.class)   //The class that contains settings for this processor, may be the NoSettings class
 /*
   AbstractProcessorDescriptor provides a good starting point for creating process descriptors.
-  It takes the processor and settings objects as generic types, so that we can accept/return the appropriate classes/
+  It takes the processor and settings objects as generic types, so that we can accept/return the appropriate classes
  */
 public class Numbers extends AbstractProcessorDescriptor<NumbersProcessor, NumbersSettings> {
 
@@ -31,7 +32,7 @@ public class Numbers extends AbstractProcessorDescriptor<NumbersProcessor, Numbe
   public Capabilities capabilities() {
     return new SimpleCapabilities.Builder()
         //.from(super.capabilities())   //This isn't needed here as our parent is abstract, but if the parent did have capabilities you may want to inherit them
-        .withCreatesAnnotations("number", SpanBounds.class) //Declare that we create "number" annotations
+        .withCreatesAnnotations(AnnotationTypes.ANNOTATION_TYPE_NUMBER, SpanBounds.class) //Declare that we create "number" annotations, using the conventions so that the naming is standardised
         .withProcessesContent(Text.class)   //Declare that we process Text content
         .build();
   }

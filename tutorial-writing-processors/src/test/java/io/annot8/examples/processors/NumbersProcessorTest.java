@@ -3,6 +3,7 @@ package io.annot8.examples.processors;
 import io.annot8.api.annotations.Annotation;
 import io.annot8.api.exceptions.BadConfigurationException;
 import io.annot8.common.data.content.Text;
+import io.annot8.conventions.AnnotationTypes;
 import io.annot8.testing.testimpl.TestItem;
 import io.annot8.testing.testimpl.content.TestStringContent;
 import org.junit.jupiter.api.Test;
@@ -30,7 +31,7 @@ public class NumbersProcessorTest {
     Annotation annotation = content.getAnnotations().getAll().findFirst().get();
     assertEquals("12345", annotation.getBounds().getData(content).get());
     assertEquals(12345, annotation.getProperties().get("value").get());
-    assertEquals("number", annotation.getType());
+    assertEquals(AnnotationTypes.ANNOTATION_TYPE_NUMBER, annotation.getType());
   }
 
   /*

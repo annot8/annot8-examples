@@ -6,6 +6,7 @@ import io.annot8.api.exceptions.BadConfigurationException;
 import io.annot8.common.components.AbstractProcessor;
 import io.annot8.common.data.bounds.SpanBounds;
 import io.annot8.common.data.content.Text;
+import io.annot8.conventions.AnnotationTypes;
 import io.annot8.conventions.PropertyKeys;
 
 import java.util.regex.Matcher;
@@ -44,7 +45,7 @@ public class NumbersProcessor extends AbstractProcessor {
     while(m.find()){
       content.getAnnotations().create()
           .withBounds(new SpanBounds(m.start(), m.end()))   //Set the bounds
-          .withType("number")   //Set the type, using a hard coded value as there isn't an appropiate one in the annot8-conventions project
+          .withType(AnnotationTypes.ANNOTATION_TYPE_NUMBER)   //Set the type
           .withProperty(PropertyKeys.PROPERTY_KEY_VALUE, Integer.parseInt(m.group()))   //Set a property on the annotation, using the appropriate convention
           .save();
     }

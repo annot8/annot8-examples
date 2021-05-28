@@ -5,6 +5,7 @@ import io.annot8.api.capabilities.Capabilities;
 import io.annot8.api.capabilities.ContentCapability;
 import io.annot8.common.data.bounds.SpanBounds;
 import io.annot8.common.data.content.Text;
+import io.annot8.conventions.AnnotationTypes;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -24,12 +25,12 @@ public class NumbersTest {
 
     //Check that we're creating an Annotation and that it has the correct definitions
     AnnotationCapability annotCap = c.creates(AnnotationCapability.class).findFirst().get();
-    assertEquals(SpanBounds.class, ((AnnotationCapability)annotCap).getBounds());
-    assertEquals("number", ((AnnotationCapability)annotCap).getType());
+    assertEquals(SpanBounds.class, annotCap.getBounds());
+    assertEquals(AnnotationTypes.ANNOTATION_TYPE_NUMBER, annotCap.getType());
 
     //Check that we're processing a Content and that it has the correct definitions
     ContentCapability contentCap = c.processes(ContentCapability.class).findFirst().get();
-    assertEquals(Text.class, ((ContentCapability)contentCap).getType());
+    assertEquals(Text.class, contentCap.getType());
   }
 
   @Test
